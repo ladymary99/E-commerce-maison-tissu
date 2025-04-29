@@ -1,0 +1,259 @@
+/* Shop Page Styles */
+.shop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Products Header */
+.products-header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #0366d6;
+}
+
+.breadcrumb span {
+  color: #6b7280;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  background-color: #f9fafb;
+}
+
+.product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+  text-decoration: none;
+}
+
+.product-name a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+/* Badge Styling */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.new-badge {
+  background-color: #0366d6;
+  color: white;
+}
+
+.sale-badge {
+  background-color: #e53e3e;
+  color: white;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.button-containers {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.touch-button {
+  position: relative;
+  background-color: lightblue;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 15px 30px;
+  font-size: 17px;
+  cursor: pointer;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Courier New", monospace;
+  display: flex;
+  user-select: none;
+}
+
+.touch-button::after {
+  margin-left: 8px;
+  font-size: 10px;
+}
+
+.corner2 {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background-color: black;
+  z-index: 0;
+}
+
+.top-left {
+  top: -2px;
+  left: -2px;
+  transform-origin: top left;
+}
+
+.top-right {
+  top: -2px;
+  right: -2px;
+  transform-origin: top right;
+}
+
+.bottom-left {
+  bottom: -2px;
+  left: -2px;
+  transform-origin: bottom left;
+}
+
+.bottom-right {
+  bottom: -2px;
+  right: -2px;
+  transform-origin: bottom right;
+}
+.button-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.touch-button {
+  position: relative;
+  background-color: lightblue;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Courier New", monospace;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.touch-button::after {
+  margin-left: 8px;
+  font-size: 10px;
+}
+
+.corner2 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  z-index: 0;
+}
+
+.top-left {
+  top: -2px;
+  left: -2px;
+  transform-origin: top left;
+}
+
+.top-right {
+  top: -2px;
+  right: -2px;
+  transform-origin: top right;
+}
+
+.bottom-left {
+  bottom: -2px;
+  left: -2px;
+  transform-origin: bottom left;
+}
+
+.bottom-right {
+  bottom: -2px;
+  right: -2px;
+  transform-origin: bottom right;
+}
