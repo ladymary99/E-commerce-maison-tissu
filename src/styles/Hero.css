@@ -322,7 +322,7 @@
   background-color: white;
 }
 
-.section-title {
+.featured-title {
   font-size: 32px;
   margin-bottom: 48px;
   text-align: center;
@@ -331,7 +331,7 @@
   font-family: "Bruno Ace", sans-serif;
 }
 
-.section-title::after {
+.featured-title::after {
   content: "";
   position: absolute;
   bottom: -12px;
@@ -349,7 +349,7 @@
   gap: 10px;
   margin-top: 20px;
 }
-
+/* 
 .productcard {
   border-radius: 8px;
   overflow: hidden;
@@ -360,7 +360,7 @@
 
 .productcard:hover {
   transform: translateY(-8px);
-}
+} */
 
 .product-link {
   display: block;
@@ -368,15 +368,15 @@
   text-decoration: none;
 }
 
-.product-image {
+.productimage {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background-color: #121820;
+  background-color: rgb(17, 33, 44);
   border-radius: 12px;
 }
-
-.product-image img {
+/* #121820 */
+.productimage img {
   width: 100%;
   height: 100%;
   object-fit: cover;

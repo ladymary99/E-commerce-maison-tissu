@@ -12,10 +12,10 @@ const ProductCard = ({ product }) => {
   const [currentImage, setCurrentImage] = useState(product.image);
 
   return (
-    <div className="productcard product-card">
+    <div className="productcard ">
       <Link to={`/product/${product.id}`} className="product-link">
         <div
-          className="product-image"
+          className="productimage"
           onMouseEnter={() => setCurrentImage(product.alternateImage)}
           onMouseLeave={() => setCurrentImage(product.image)}
         >
@@ -77,7 +77,7 @@ const FeaturedProducts = () => {
   return (
     <section className="featured-section" ref={sectionRef}>
       <div className="container">
-        <h2 className="section-title" ref={titleRef}>
+        <h2 className="featured-title" ref={titleRef}>
           Featured Products
         </h2>
         <div className="products-grid" ref={productsRef}>
