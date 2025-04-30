@@ -1,6 +1,6 @@
 /* Shop Page Styles */
 .shop-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -23,7 +23,7 @@
 }
 
 .breadcrumb a:hover {
-  color: #0366d6;
+  color: rgb(17, 33, 44);
 }
 
 .breadcrumb span {
@@ -32,7 +32,7 @@
 
 /* Product Card Styling */
 .product-card {
-  background-color: #fff;
+  background-color: rgb(17, 33, 44);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -50,8 +50,8 @@
 .product-image {
   position: relative;
   overflow: hidden;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
-  background-color: #f9fafb;
+  padding-top: 100%;
+  background-color: rgb(17, 33, 44);
 }
 
 .product-image img {
@@ -69,7 +69,7 @@
 }
 
 .product-info {
-  padding: 16px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -79,12 +79,12 @@
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 8px;
-  color: #333;
+  color: white;
   text-decoration: none;
 }
 
 .product-name a {
-  color: #333;
+  color: white;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -92,7 +92,7 @@
 .product-price {
   font-size: 18px;
   font-weight: 600;
-  color: #111;
+  color: white;
   margin-bottom: 16px;
 }
 

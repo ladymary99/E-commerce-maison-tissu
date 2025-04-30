@@ -312,8 +312,8 @@ const ShopPage = ({ addToCart }) => {
               <div className="color-options">
                 <button
                   className="color-option"
-                  style={{ backgroundColor: "#ffffff" }}
-                  title="White"
+                  style={{ backgroundColor: "lightblue" }}
+                  title="lightblue"
                 ></button>
                 <button
                   className="color-option"
@@ -373,13 +373,13 @@ const ShopPage = ({ addToCart }) => {
                     <div className="product-price">
                       <span>${product.price.toFixed(2)}</span>
                     </div>
-                    <button
+                    {/* <button
                       id={`add-to-cart-${product.id}`}
                       className="add-to-cart-btn"
                       onClick={() => handleAddToCart(product)}
                     >
                       Add to Cart
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               ))
