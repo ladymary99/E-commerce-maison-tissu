@@ -14,7 +14,7 @@
   animation: fadeInUp 0.5s ease;
 }
 
-.productname {
+.product-name {
   font-size: 3rem;
   font-weight: 600;
   color: var(--color-primary);

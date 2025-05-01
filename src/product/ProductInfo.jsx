@@ -92,7 +92,7 @@ const ProductInfo = ({
   return (
     <div className="product-info">
       <div className="product-brand">Maison Tissu</div>
-      <h2 className="productname">{product.name}</h2>
+      <h2 className="product-name">{product.name}</h2>
       <div className="product-price">${product.price.toFixed(2)}</div>
 
       {/* <div className="product-rating">
