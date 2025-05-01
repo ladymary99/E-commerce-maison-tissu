@@ -15,11 +15,12 @@
 }
 
 .productname {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--color-primary);
   margin: 0;
   animation: fadeInUp 0.7s ease;
+  font-family: "Bruno Ace", sans-serif;
 }
 
 .product-rating {
@@ -33,25 +34,25 @@
   font-size: 1.2rem;
 }
 
-.product-description {
+.productdescription {
   line-height: 1.7;
   color: var(--color-text);
   animation: fadeInUp 1.1s ease;
 }
 
-.product-features {
+.productfeatures {
   padding-left: 1.25rem;
   color: var(--color-text);
   animation: fadeInUp 1.3s ease;
 }
 
-.product-features li {
+.productfeatures li {
   margin-bottom: 0.5rem;
   opacity: 0;
   animation: fadeInLeft 0.5s ease forwards;
 }
 
-.product-features li:nth-child(1) {
+.productfeatures li:nth-child(1) {
   animation-delay: 0.1s;
 }
 .product-features li:nth-child(2) {

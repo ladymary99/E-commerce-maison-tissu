@@ -143,9 +143,9 @@ const ProductInfo = ({
           <img src={arrow} alt="" className="arrow-icon" />
         </button>
       </div>
-      <p className="product-description">{product.description}</p>
+      <p className="productdescription">{product.description}</p>
 
-      <ul className="product-features">
+      <ul className="productfeatures">
         {product.features &&
           product.features.map((feature, index) => (
             <li key={index}>{feature}</li>
