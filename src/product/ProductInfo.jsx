@@ -17,8 +17,10 @@ const ProductInfo = ({
   setQuantity,
   onAddToCart, // Added prop for handling the cart action
 }) => {
-  const selectedColorObj = product.colors && product.colors.find((c) => c.name === selectedColor);
-  const selectedSizeObj = product.sizes && product.sizes.find((s) => s.name === selectedSize);
+  const selectedColorObj =
+    product.colors && product.colors.find((c) => c.name === selectedColor);
+  const selectedSizeObj =
+    product.sizes && product.sizes.find((s) => s.name === selectedSize);
 
   const buttonRef = useRef(null);
   const topLeftRef = useRef(null);
@@ -90,24 +92,16 @@ const ProductInfo = ({
   return (
     <div className="product-info">
       <div className="product-brand">Maison Tissu</div>
-      <h2 className="product-name">{product.name}</h2>
+      <h2 className="productname">{product.name}</h2>
       <div className="product-price">${product.price.toFixed(2)}</div>
 
-      <div className="product-rating">
+      {/* <div className="product-rating">
         {[1, 2, 3, 4, 5].map((star) => (
           <span key={star} className="star">
             ★
           </span>
         ))}
-      </div>
-
-      <p className="product-description">{product.description}</p>
-
-      <ul className="product-features">
-        {product.features && product.features.map((feature, index) => (
-          <li key={index}>{feature}</li>
-        ))}
-      </ul>
+      </div> */}
 
       {product.colors && product.colors.length > 0 && (
         <div className="product-color-section">
@@ -139,7 +133,6 @@ const ProductInfo = ({
         <h3>Quantity</h3>
         <QuantitySelector quantity={quantity} onQuantityChange={setQuantity} />
       </div>
-
       <div className="button-container button-add" ref={buttonRef}>
         <div className="corner2 top-left" ref={topLeftRef}></div>
         <div className="corner2 top-right" ref={topRightRef}></div>
@@ -150,6 +143,14 @@ const ProductInfo = ({
           <img src={arrow} alt="" className="arrow-icon" />
         </button>
       </div>
+      <p className="product-description">{product.description}</p>
+
+      <ul className="product-features">
+        {product.features &&
+          product.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+      </ul>
     </div>
   );
 };
