@@ -217,7 +217,7 @@ const CartPage = ({ cartItems, removeFromCart, updateQuantity, cartTotal }) => {
           </div>
 
           {/* Cart Items */}
-          <div>
+          <div className="imgproduct">
             {cartItems.map((item) => (
               <CartItem
                 key={`${item.id}-${item.selectedColor}-${item.selectedSize}`}
@@ -271,9 +271,17 @@ const CartPage = ({ cartItems, removeFromCart, updateQuantity, cartTotal }) => {
             <span className="label">Total</span>
             <span className="value">${finalTotal.toFixed(2)}</span>
           </div>
-
-          <Link to="/checkout" className="checkout-button">
-            Proceed to Checkout
+          <Link to="/checkout">
+            <div className="button-containers" ref={buttonRef}>
+              <div className="corner2 top-left" ref={topLeftRef}></div>
+              <div className="corner2 top-right" ref={topRightRef}></div>
+              <div className="corner2 bottom-left" ref={bottomLeftRef}></div>
+              <div className="corner2 bottom-right" ref={bottomRightRef}></div>
+              <button className="touch-button">
+                Proceed to Checkout
+                <img src={arrow} alt="" className="arrow-icon" />
+              </button>
+            </div>
           </Link>
 
           <div className="payment-methods">

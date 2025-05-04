@@ -93,7 +93,7 @@ const Checkout = () => {
                 <input
                   type="checkbox"
                   id="newsletter"
-                  className="checkbox-input"
+                  className="checkboxinput"
                 />
                 <label htmlFor="newsletter" className="checkbox-label">
                   Email me with news and offers
