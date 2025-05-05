@@ -2341,7 +2341,7 @@ textarea:invalid:focus {
 }
 
 .policy-link {
-  font-size: var(--font-size-sm);
+  font-weight: bold;
   color: var(--color-text-secondary);
 }
 
