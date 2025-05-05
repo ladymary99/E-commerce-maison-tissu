@@ -15,7 +15,9 @@
   font-weight: 700;
   color: #333;
 }
-
+.bagicon {
+  color: lightblue;
+}
 .cart-grid {
   display: grid;
   grid-template-columns: 1fr;

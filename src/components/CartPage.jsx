@@ -173,6 +173,7 @@ const CartPage = ({ cartItems, removeFromCart, updateQuantity, cartTotal }) => {
             strokeLinejoin="round"
             strokeWidth={2}
             d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+            className="bagicon"
           />
         </svg>
         <h2>Your Cart is Empty</h2>
