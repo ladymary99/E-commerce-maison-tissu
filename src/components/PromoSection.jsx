@@ -144,9 +144,6 @@ const PromoSection = () => {
           </div>
         </div>
         <ChairCarousel />
-        {/* <div className="promo-image" ref={imageRef}>
-          <img src={playingCardsImg} alt="Octocat Playing Cards" />
-        </div> */}
       </div>
     </section>
   );
