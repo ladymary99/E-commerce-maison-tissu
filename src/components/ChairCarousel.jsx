@@ -91,13 +91,6 @@ const ChairCarousel = () => {
       "-=0.5"
     );
 
-    // Auto-play carousel (commented out for now)
-    // intervalRef.current = setInterval(() => {
-    //   if (!document.hidden && !isAnimating.current) {
-    //     nextSlide();
-    //   }
-    // }, 8000);
-
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
