@@ -231,28 +231,6 @@
   padding: 20px;
 }
 
-/* Checkout Button */
-.checkout-button {
-  display: block;
-  width: 100%;
-  background-color: #0366d6;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 14px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s;
-  margin-top: 20px;
-  text-decoration: none;
-}
-
-.checkout-button:hover {
-  background-color: #0353b3;
-}
-
 /* Empty Cart */
 .empty-cart {
   text-align: center;
@@ -358,14 +336,13 @@
   position: relative;
   background-color: lightblue;
   color: black;
-  font-weight: bold;
+
   border: none;
   padding: 15px 30px;
-  font-size: 17px;
+  font-size: 14px;
   cursor: pointer;
   z-index: 1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+
   font-family: "Courier New", monospace;
   display: flex;
   user-select: none;
@@ -379,7 +356,7 @@
 .corner2 {
   position: absolute;
   width: 10px;
-  height: 15px;
+  height: 10px;
   background-color: black;
   z-index: 0;
 }
