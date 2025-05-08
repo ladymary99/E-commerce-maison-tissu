@@ -867,14 +867,13 @@ textarea:invalid:focus {
 
 .sort-dropdown-menu,
 .feature-dropdown-menu {
-  position: absolute;
+  position: relative;
   top: 100%;
   right: 0;
-  background-color: white;
-  box-shadow: var(--shadow-lg);
-  border-radius: var(--radius-md);
+  background-color: lightblue;
+
   min-width: 200px;
-  z-index: 10;
+  z-index: 9999;
 }
 
 .sort-option {

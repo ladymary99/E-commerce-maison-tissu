@@ -270,7 +270,7 @@ const ShopPage = ({ addToCart }) => {
               </div>
             </div>
 
-            <div className="features-filter">
+            {/* <div className="features-filter">
               <button
                 className="feature-dropdown-btn"
                 onClick={toggleFeatureMenu}
@@ -289,7 +289,7 @@ const ShopPage = ({ addToCart }) => {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
 
