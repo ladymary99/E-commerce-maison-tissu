@@ -22,6 +22,58 @@ const ShopPage = ({ addToCart }) => {
   const urlParams = new URLSearchParams(location.search);
   const categoryFromUrl = urlParams.get("category");
 
+  const buttonRef = useRef(null);
+  const topLeftRef = useRef(null);
+  const topRightRef = useRef(null);
+  const bottomLeftRef = useRef(null);
+  const bottomRightRef = useRef(null);
+
+  useEffect(() => {
+    if (!buttonRef.current) return;
+
+    const corners = [
+      topLeftRef.current,
+      topRightRef.current,
+      bottomLeftRef.current,
+      bottomRightRef.current,
+    ];
+
+    gsap.set(corners, {
+      opacity: 0,
+      scale: 0,
+    });
+
+    const timeline = gsap.timeline({ paused: true });
+
+    timeline.to(corners, {
+      opacity: 1,
+      scale: 1,
+      duration: 0.25,
+      stagger: 0.05,
+      ease: "back.out(1.5)",
+    });
+
+    // Add event listeners for hover
+    const button = buttonRef.current;
+
+    const handleMouseEnter = () => {
+      timeline.play();
+    };
+
+    const handleMouseLeave = () => {
+      timeline.reverse();
+    };
+
+    button.addEventListener("mouseenter", handleMouseEnter);
+    button.addEventListener("mouseleave", handleMouseLeave);
+
+    // Cleanup
+    return () => {
+      button.removeEventListener("mouseenter", handleMouseEnter);
+      button.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
   // Set the active category from URL or location state on component mount
   useEffect(() => {
     if (categoryFromUrl) {
@@ -354,7 +406,7 @@ const ShopPage = ({ addToCart }) => {
           <div ref={productsRef} className="products-grid">
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
-                <div key={product.id} className="product-card">
+                <div key={product.id} className="products-card">
                   <div className="product-image">
                     <Link to={`/product/${product.id}`}>
                       <img src={product.image} alt={product.name} />
@@ -366,20 +418,43 @@ const ShopPage = ({ addToCart }) => {
                       )}
                     </Link>
                   </div>
-                  <div className="product-info">
-                    <h3 className="product-name">
+                  <div className="products-info">
+                    <h3 className="products-name">
                       <Link to={`/product/${product.id}`}>{product.name}</Link>
                     </h3>
-                    <div className="product-price">
+                    <div className="products-price">
                       <span>${product.price.toFixed(2)}</span>
                     </div>
-                    {/* <button
-                      id={`add-to-cart-${product.id}`}
-                      className="add-to-cart-btn"
-                      onClick={() => handleAddToCart(product)}
-                    >
-                      Add to Cart
-                    </button> */}
+                    <div className="product-rating">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <span key={star} className="star">
+                          ★
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="buttons-container" ref={buttonRef}>
+                      <div className="corner2 top-left" ref={topLeftRef}></div>
+                      <div
+                        className="corner2 top-right"
+                        ref={topRightRef}
+                      ></div>
+                      <div
+                        className="corner2 bottom-left"
+                        ref={bottomLeftRef}
+                      ></div>
+                      <div
+                        className="corner2 bottom-right"
+                        ref={bottomRightRef}
+                      ></div>
+                      <button
+                        className="touch-buttons"
+                        id={`add-to-cart-${product.id}`}
+                        onClick={() => handleAddToCart(product)}
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))
