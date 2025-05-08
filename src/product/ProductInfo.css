@@ -29,11 +29,6 @@
   animation: fadeInUp 0.9s ease;
 }
 
-.star {
-  color: gold;
-  font-size: 1.2rem;
-}
-
 .productdescription {
   line-height: 1.7;
   color: var(--color-text);

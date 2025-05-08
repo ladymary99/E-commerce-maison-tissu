@@ -89,7 +89,6 @@
   position: relative;
   background-color: lightblue;
   color: black;
-  font-weight: bold;
   border: none;
   padding: 15px 30px;
   font-size: 17px;
@@ -148,14 +147,14 @@
   position: relative;
   background-color: lightblue;
   color: black;
-  font-weight: bold;
+
   border: none;
   padding: 10px 20px;
   font-size: 17px;
   cursor: pointer;
   z-index: 1;
   text-transform: uppercase;
-  letter-spacing: 2px;
+
   font-family: "Courier New", monospace;
   display: flex;
   align-items: center;
@@ -578,126 +577,6 @@
   .category-header {
     margin-bottom: 40px;
   }
-}
-
-.button-container {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.touch-button {
-  position: relative;
-  background-color: rgb(24, 49, 71);
-  color: white;
-  font-weight: 500;
-  border: none;
-  padding: 15px 30px;
-  font-size: 14px;
-  cursor: pointer;
-  z-index: 1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Courier New", monospace;
-  display: flex;
-  user-select: none;
-}
-
-.touch-button::after {
-  margin-left: 8px;
-  font-size: 10px;
-}
-
-.corner2 {
-  position: absolute;
-  width: 10px;
-  height: 15px;
-  background-color: rgb(24, 49, 71);
-  z-index: 0;
-}
-
-.top-left {
-  top: -2px;
-  left: -2px;
-  transform-origin: top left;
-}
-
-.top-right {
-  top: -2px;
-  right: -2px;
-  transform-origin: top right;
-}
-
-.bottom-left {
-  bottom: -2px;
-  left: -2px;
-  transform-origin: bottom left;
-}
-
-.bottom-right {
-  bottom: -2px;
-  right: -2px;
-  transform-origin: bottom right;
-}
-.button-container {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.touch-button {
-  position: relative;
-  background-color: lightblue;
-  color: black;
-  font-weight: 500;
-  border: none;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  z-index: 1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Courier New", monospace;
-  display: flex;
-  align-items: center;
-  user-select: none;
-}
-
-.touch-button::after {
-  margin-left: 8px;
-  font-size: 10px;
-}
-
-.corner2 {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: black;
-  z-index: 0;
-}
-
-.top-left {
-  top: -2px;
-  left: -2px;
-  transform-origin: top left;
-}
-
-.top-right {
-  top: -2px;
-  right: -2px;
-  transform-origin: top right;
-}
-
-.bottom-left {
-  bottom: -2px;
-  left: -2px;
-  transform-origin: bottom left;
-}
-
-.bottom-right {
-  bottom: -2px;
-  right: -2px;
-  transform-origin: bottom right;
 }
 
 /* contact page style  */
@@ -1954,39 +1833,19 @@ textarea:invalid:focus {
   position: relative;
   background-color: lightblue;
   color: black;
-  font-weight: bold;
+
   border: none;
   padding: 15px 30px;
   font-size: 17px;
   cursor: pointer;
   z-index: 1;
   text-transform: uppercase;
-  letter-spacing: 2px;
+
   font-family: "Courier New", monospace;
   display: flex;
   user-select: none;
   align-items: center;
   justify-content: center;
-}
-.login-button {
-  width: 100%;
-  background-color: var(--color-primary);
-  color: white;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  margin-top: 1rem;
-  transition: background-color var(--transition-fast);
-}
-
-.login-button:hover {
-  background-color: #2f363d;
 }
 
 .arrow-icon {
