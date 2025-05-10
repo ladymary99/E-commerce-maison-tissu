@@ -542,6 +542,9 @@
   transform: translateX(-3px);
 }
 @media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+  }
   .chair-image img {
     max-width: 100%;
   }
@@ -614,6 +617,7 @@
 @media (max-width: 768px) {
   .color-switch {
     display: inline-flex;
+    padding-right: 500px;
   }
 
   .color-switch-label {
