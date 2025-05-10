@@ -95,13 +95,13 @@ const Footer = () => {
           <div className="footer-links" ref={linksRef}>
             <ul>
               <li>
-                <a href="/collections/apparel">Apparel</a>
+                <a href="/collections/apparel">Bedspreads</a>
               </li>
               <li>
-                <a href="/collections/lifestyle">Lifestyle</a>
+                <a href="/collections/lifestyle">Blankets</a>
               </li>
               <li>
-                <a href="/collections/collectibles">Collectibles</a>
+                <a href="/collections/collectibles">Pillows</a>
               </li>
             </ul>
             <ul>
