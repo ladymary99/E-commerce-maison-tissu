@@ -440,7 +440,7 @@
 }
 @media (max-width: 768px) {
   .footer-background-text {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     font-weight: bold;
     position: relative;
     top: 50px;
@@ -558,6 +558,9 @@
 
   .chair-info h2 {
     font-size: 1.8rem;
+  }
+  .carousel-controls {
+    margin: 0;
   }
 }
 
