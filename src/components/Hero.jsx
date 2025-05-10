@@ -103,15 +103,16 @@ const Hero = () => {
         },
         "-=0.4"
       )
+
       .from(
         imageRef.current,
         {
-          scale: 0.9,
+          x: 100,
           opacity: 0,
           duration: 1,
           ease: "power3.out",
         },
-        "-=0.6"
+        "-=0.8"
       );
 
     return () => {
