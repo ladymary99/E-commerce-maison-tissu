@@ -4,10 +4,16 @@ This project was bootstrapped with [Frontity](https://frontity.org/).
 
 #### Table of Contents
 
+<<<<<<< HEAD
 - [Launch a development server](#launch-a-development-server)
 - [Create your custom theme](#create-your-custom-theme)
 - [Create a production-ready build](#create-a-production-ready-build)
 - [Deploy](#deploy)
+=======
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- use three for 3d products page
+>>>>>>> fd3cf2b03cf3e5d98365f4fb2efe3afc160a10c1
 
 ### Launch a development server
 
