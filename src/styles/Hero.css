@@ -54,6 +54,23 @@
   transform: translateX(3px);
 }
 
+.video-blur-box {
+  position: relative;
+  width: 45%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* filter: blur(2px); */
+  /* transform: scale(1.1); */
+}
+
 @media (max-width: 768px) {
   .hero-section {
     width: 100%;

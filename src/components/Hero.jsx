@@ -19,6 +19,7 @@ const Hero = () => {
   const topRightRef = useRef(null);
   const bottomLeftRef = useRef(null);
   const bottomRightRef = useRef(null);
+  // const videoBoxRef = useRef(null);
 
   useEffect(() => {
     if (!buttonRef.current) return;
@@ -142,6 +143,11 @@ const Hero = () => {
             </div>
           </Link>
         </div>
+
+        <video className="hero-video" autoPlay muted loop playsInline>
+          <source src="pillow.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
   );

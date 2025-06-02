@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import arrow from "../assets/arrow.svg";
-import lifestyleImg from "../assets/bed.jpg";
+import lifestyleImg from "../assets/bedspreeds.jpg";
 import apparelImg from "../assets/bb1.jpg";
-import collectiblesImg from "../assets/pillow-blue2.jpg";
+import collectiblesImg from "../assets/pillows.jpg";
 import "../styles/Hero.css";
 
 // Register ScrollTrigger plugin

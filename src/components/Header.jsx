@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
 import SearchBar from "./SearchBar";
+import logo from "../assets/logo.png";
 
 const Header = ({ cartItemsCount }) => {
   const headerRef = useRef(null);
@@ -156,7 +157,7 @@ const Header = ({ cartItemsCount }) => {
             </ul>
           </nav>
           <Link to="/" className="logo">
-            <span>MaisonTissu</span>
+            <img src={logo} alt="" className="logo" />
           </Link>
 
           <div className="header-actions">

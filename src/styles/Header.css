@@ -182,10 +182,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  font-family: "Bruno Ace", sans-serif;
-  font-weight: 600;
-  color: black;
+  width: 300px;
 }
 .main-nav {
   margin-left: 2px;
