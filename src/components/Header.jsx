@@ -126,14 +126,21 @@ const Header = ({ cartItemsCount }) => {
         <div className="container header-container">
           <nav className="main-nav">
             <ul className="nav-list">
-              <div className="button-container" ref={buttonRef}>
+              <li className="nav-item touch-nav">
+                <Link to="/shop">All Products</Link>
+              </li>
+              <li className="nav-item touch-nav">
+                <Link to="/shop">Collectibles</Link>
+              </li>
+              <li className="nav-item touch-nav">
+                <Link to="/shop">Lifestyle</Link>
+              </li>
+              {/* <div className="button-container" ref={buttonRef}>
                 <div className="corner top-left" ref={topLeftRef}></div>
                 <div className="corner top-right" ref={topRightRef}></div>
                 <div className="corner bottom-left" ref={bottomLeftRef}></div>
                 <div className="corner bottom-right" ref={bottomRightRef}></div>
-                <li className="nav-item touch-nav">
-                  <Link to="/shop">All Products</Link>
-                </li>
+                
               </div>
 
               <div className="button-container" ref={buttonRef}>
@@ -141,19 +148,15 @@ const Header = ({ cartItemsCount }) => {
                 <div className="corner top-right" ref={topRightRef}></div>
                 <div className="corner bottom-left" ref={bottomLeftRef}></div>
                 <div className="corner bottom-right" ref={bottomRightRef}></div>
-                <li className="nav-item touch-nav">
-                  <Link to="/shop">Collectibles</Link>
-                </li>
+                
               </div>
               <div className="button-container" ref={buttonRef}>
                 <div className="corner top-left" ref={topLeftRef}></div>
                 <div className="corner top-right" ref={topRightRef}></div>
                 <div className="corner bottom-left" ref={bottomLeftRef}></div>
                 <div className="corner bottom-right" ref={bottomRightRef}></div>
-                <li className="nav-item touch-nav">
-                  <Link to="/shop">Lifestyle</Link>
-                </li>
-              </div>
+               
+              </div> */}
             </ul>
           </nav>
           <Link to="/" className="logo">
